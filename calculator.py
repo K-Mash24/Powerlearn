@@ -21,14 +21,14 @@ def get_user_input():
 def perform_operation(num1, num2, operation):
     """Perform the chosen mathematical operation."""
     if operation == 1:
-        return num1 + num2
+        return num1 + num2, "+"
     elif operation == 2:
-        return num1 - num2
+        return num1 - num2, "-"
     elif operation == 3:
-        return num1 * num2
+        return num1 * num2, "*"
     elif operation == 4:
         if num2 != 0:
-            return num1 / num2
+            return num1 / num2, "/"
         else:
             raise ZeroDivisionError("Cannot divide by zero.")
     else:
@@ -38,8 +38,8 @@ def main():
     num1, num2, operation = get_user_input()
     
     try:
-        result = perform_operation(num1, num2, operation)
-        print(f"\nThe result is: {result}")
+        result, operator = perform_operation(num1, num2, operation)
+        print(f"\n{num1} {operator} {num2} = {result}")
     except (ZeroDivisionError, ValueError) as e:
         print(f"\nError: {e}")
 
