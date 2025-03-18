@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment week 2</title>
+    <style>
+        .main {
+            text-align: left;
+            margin-top: 100px;
+        }
+        .body {
+            margin: 100px auto;
+            width: 90%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-attachment: fixed;
+            background-image: url(https://images.pexels.com/photos/4464884/pexels-photo-4464884.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 85%;
+            margin-left: 30px;
+            padding: 10px;
+        }
+
+        tr a:hover {
+            text-decoration: underline;
+            cursor: pointer;   
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+            <h1>Welcome to My Simple Web Page</h1>
+            <h3>Here is where i will attempt to answer all the necessary questions.</h3><br><br>
+            <p>I was required to add several features to the webpage</p>
+            <ol type="I">
+                <li>An ordered list with roman numbers</li>
+                <li>An inserted image from pexels.com</li>
+                <li>A table of 5 contacts with; name, address, mobile and emails</li>
+                <li>A registration form</li><br><br>
+                <p>The Registration form should include....</p><br>
+                <ol type="i">
+                    <li>Name</li>
+                    <li>Email</li>
+                    <li>Password</li>
+                    <li>Date</li>
+                    <li>Dropdown</li>
+                    <li>Radio buttons</li>
+                    <li>Checkboxes</li>
+                    <li>Proper labels and placeholders</li>
+                    <li>Required fields and validation attributes</li>
+                </ol>
+            </ol><br><br>
+            <h3>Here is the image from pexels.com. <br>- The background image and the one down below.</h3>
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image of a computer" width="30%" height="auto"><br><br>
+
+            <h3>Here is a table of 5 contacts</h3>
+            <table border="5">
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>1234, 5th Avenue, New York</td>
+                    <td>123-456-7890</td>
+                    <td>example@domain.com</td>
+                </tr>
+            </table><br><br>
+
+                <h3>Here is the registration form</h3>
+                <form action="" method="post" autocomplete="on" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                    <label for="name">Name:</label><br>
+                    <input type="text" style=" width: 500px; font-size: 18px;" id="name" name="name" placeholder="Enter your name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" style=" width: 500px; font-size: 18px;" id="email" name="email" placeholder="Enter your email" required><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" style="width: 500px; font-size: 18px;" id="password" name="password" placeholder="Enter your password" required><br><br>
+                    <label for="date">Date:</label><br>
+                    <input type="date" style=" width: 500px; font-size: 18px;" id="date" name="date" required><br><br>
+                    <label for="dropdown">Dropdown:</label><br>
+                    <select name="dropdown" id="dropdown">
+                        <option value="option1">Hello</option>
+                        <option value="option2">Goodbye</option>
+                        <option value="option3">See you later</option>
+                        <option value="option3">Go away now</option>
+                    </select><br><br>
+                    <label for="radio">Radio buttons:</label><br>
+                    <input type="radio" id="radio1" name="radio" value="radio1">
+                    <label for="radio1">Yes</label><br>
+                    <input type="radio" id="radio2" name="radio" value="radio2">
+                    <label for="radio2">No</label><br>
+                    <input type="radio" id="radio3" name="radio" value="radio3">
+                    <label for="radio3">Are you sure?</label><br><br><br>
+                    
+                    <label for="checkbox">Which is your type of car?:</label><br>
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+                    <label for="checkbox1">Internal Combustion Engine cars?</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+                    <label for="checkbox2">Electric car?</label><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+Instructions
+Create an index.html file.
+Add an ordered list with roman numerals
+Add an external image from pexels.com
+Add a table of 5 contacts with; name, address, mobile and emails
+Add a registration form
+Note
+
+The registration form should have:
+
+Name, email, password, and date fields.
+A dropdown, radio buttons, and checkboxes.
+Proper labels and placeholders.
+Required fields and validation attributes.
+Ensure proper indentation and commenting.
+Tasks
+Create a well-structured HTML5 document.
+Ensure semantic correctness.
+Happy Coding! 💻✨ -->
